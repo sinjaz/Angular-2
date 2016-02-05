@@ -1,0 +1,7 @@
+<div class="main">
+  <input placeholder="add a task..." [(ngModel)]="task" (keyup)="doneTyping($event)">
+  <ul><li *ngFor="#item of tasks">
+  	<my-component (remove)="onRemove($event)" [data]="item"></my-component>
+  	</li>
+  </ul>
+</div>

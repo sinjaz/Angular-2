@@ -1,0 +1,6 @@
+<span [ngClass]="{'show': show, 'fadable': true}">
+	<span class="button" (click)="onClickDone()">{{data}}</span>
+	<span class="button red" (click)="onClickRemove(item)">x</span>
+</span>
+
+<hr [ngClass]="{'done': done}">
